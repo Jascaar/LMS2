@@ -43,7 +43,7 @@ namespace LMS.Models
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime EndDate { get; set; }
         [Display(Name = "Created")]
-        public DateTime CreationTime { get; set; }
+        public DateTime CreationTime { get; } = DateTime.Now;
         [StringLength(5000, ErrorMessage = "The {0} must be between {1} and {2} characters long", MinimumLength = 1)]
         [Display(Name = "Module Info")]
         public string ModuleInfo { get; set; }

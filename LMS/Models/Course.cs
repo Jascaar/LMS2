@@ -27,7 +27,7 @@ namespace LMS.Models
         [Display(Name = "Duration (days)")]
         public int DurationDays { get; set; }
 
-        public DateTime CreationTime { get; }
+        public DateTime CreationTime { get; } = DateTime.Now;
 
         [Display(Name = "Urgent information")]
         public string UrgentInfo { get; set; }
