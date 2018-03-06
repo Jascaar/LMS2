@@ -15,7 +15,7 @@ namespace LMS.Models
         public string ActivityTypeName { get; set; }
         [Display(Name = "Created")]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        public DateTime CreationTime { get; set; }
+        public DateTime CreationTime { get; } = DateTime.Now;
 
     }
 }
