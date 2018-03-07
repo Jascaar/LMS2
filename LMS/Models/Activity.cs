@@ -23,18 +23,20 @@ namespace LMS.Models
         public virtual ActivityType ActivityType_ { get; set; }  //????????
         [Required]
         [Display(Name = "Start date")]
-        public DateTime StartDate { get; set; }
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime StartDate { get; set; }
         [Display(Name = "Duration (days)")]
         [Required]
         [Range(1, int.MaxValue, ErrorMessage = "Only positive integers are valid")]
         public int DurationDays { get; set; }
-        [Display(Name = "End date")]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        public DateTime EndDate { get; set; }
-        [Display(Name = "Created")]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        public DateTime CreationTime { get; } = DateTime.Now;
+        /*         protected DateTime endDate;
+                [Display(Name = "End date")]
+                [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+                public DateTime EndDate { get { return endDate; } set{endDate=StartDate.AddDays(DurationDays-1);} }
+               protected String creationTime;
+                [Display(Name = "Created")]
+                [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+                public String CreationTime { get { return creationTime; } set {creationTime=DateTime.Now.ToShortTimeString(); } }*/
         [Display(Name = "Activity info")]
         [StringLength(5000, ErrorMessage = "The {0} must be between {1} and {2} characters long", MinimumLength = 1)]
         public string ActivityInfo { get; set; }

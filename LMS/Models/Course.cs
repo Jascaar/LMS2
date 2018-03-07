@@ -8,6 +8,7 @@ namespace LMS.Models
 {
     public class Course
     {
+        [Key]
         public int Id { get; set; }
 
         [Required]
@@ -26,9 +27,13 @@ namespace LMS.Models
         [Range(1, int.MaxValue, ErrorMessage = "Only positive integers are valid")]
         [Display(Name = "Duration (days)")]
         public int DurationDays { get; set; }
-
-        public DateTime CreationTime { get; } = DateTime.Now;
-
+/*        protected DateTime endDate;
+                [Display(Name = "End date")]
+                public DateTime EndDate { get { return endDate; } set { endDate = StartDate.AddDays(DurationDays - 1).Date; } }
+                      protected String creationTime;
+                      [Display(Name = "Created")]
+                      [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+                      public String CreationTime { get { return creationTime; } set { creationTime = (string)DateTime.Now.ToShortTimeString(); } }*/
         [Display(Name = "Urgent information")]
         public string UrgentInfo { get; set; }
         //Appendices/Documents

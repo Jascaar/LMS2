@@ -38,6 +38,7 @@ namespace LMS.Controllers
         // GET: Modules/Create
         public ActionResult Create()
         {
+        
             return View();
         }
 

@@ -10,7 +10,6 @@ namespace LMS.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "LMS.Models.ApplicationDbContext";
         }
 
         protected override void Seed(LMS.Models.ApplicationDbContext context)
