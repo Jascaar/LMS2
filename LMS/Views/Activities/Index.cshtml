@@ -27,9 +27,6 @@
             @Html.DisplayNameFor(model => model.EndDate)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CreationTime)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.ActivityInfo)
         </th>
         <th></th>
@@ -53,14 +50,11 @@
             @Html.DisplayFor(modelItem => item.EndDate)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.CreationTime)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.ActivityInfo)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id= item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id })
         </td>
     </tr>

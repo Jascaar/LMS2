@@ -78,7 +78,7 @@ namespace LMS.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,CourseName,Description,StartDate,DurationDays,UrgentInfo")] Course course)
+        public ActionResult Edit([Bind(Include = "CourseName,Description,StartDate,DurationDays,UrgentInfo")] Course course)
         {
             if (ModelState.IsValid)
             {

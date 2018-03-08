@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -8,7 +9,6 @@ namespace LMS.Models
 {
     public class Course
     {
-        [Key]
         public int Id { get; set; }
 
         [Required]
@@ -31,8 +31,10 @@ namespace LMS.Models
         public DateTime EndDate { get { return StartDate.AddDays(DurationDays - 1); } }
         [Display(Name = "Urgent information")]
         public string UrgentInfo { get; set; }
+        
         //Appendices/Documents
 
         public virtual ICollection<ApplicationUser> AttendingStudents { get; set; }
+        public virtual ICollection<Module> Modules { get; set; }
     }
 }

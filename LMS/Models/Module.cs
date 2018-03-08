@@ -9,12 +9,6 @@ namespace LMS.Models
 {
     public class Module
     {
-
-        public Module()
-        {
-        }
-
-
         public int Id { get; set; }
         [StringLength(50, ErrorMessage = "The {0} must be between {1} and {2} characters long", MinimumLength = 1)]
         [Display(Name = "Module name")]
@@ -25,7 +19,7 @@ namespace LMS.Models
             { return moduleName; }
             set
             {
-               moduleName =  InitialCapital(value);
+                moduleName = InitialCapital(value);
             }
         }
         protected string moduleName { get; set; }
@@ -43,17 +37,17 @@ namespace LMS.Models
         public int DurationDays { get; set; }
         [Display(Name = "End date")]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
-        public DateTime EndDate {get { return StartDate.AddDays(DurationDays-1); }}
+        public DateTime EndDate { get { return StartDate.AddDays(DurationDays - 1); } }
         [StringLength(5000, ErrorMessage = "The {0} must be between {1} and {2} characters long", MinimumLength = 1)]
         [Display(Name = "Module Info")]
         public string ModuleInfo { get; set; }
-        [Display(Name = "Activities")]
         //navigational property
-        public virtual ICollection<Course> Course { get; set; }
+        public virtual Course Course { get; set; }
+        public virtual ICollection<Activity> Activities {get; set;}
+
         /*        Appendices*/
 
 
-        //var lägger sådana här så att flera sidor når dem??? fattar inte varför det inte fungerar enkelt
         public string InitialCapital(string value)
     {
         if (value == null | value.Trim().Length == 0) value = "";
