@@ -42,10 +42,10 @@ namespace LMS.Models
         [Display(Name = "Module Info")]
         public string ActivityInfo { get; set; }
         //navigational property
-        public virtual Module Module { get; set; }
-        /*        Appendices*/
+       public virtual Module Module { get; set; }
+       //   Appendices
         public ActivityType ActivityType { get; set; }
-
+       
 
         public string InitialCapital(string value)
     {
