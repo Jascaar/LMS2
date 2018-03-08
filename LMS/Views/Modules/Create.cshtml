@@ -17,13 +17,6 @@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Course, "Courses", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("Id", new SelectList(Model.Course))
-                @Html.ValidationMessageFor(model => model.Course, "", new { @class = "text-danger" })
-            </div>
-        </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.ModuleName, htmlAttributes: new { @class = "control-label col-md-2" })

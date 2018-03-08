@@ -203,6 +203,54 @@
     <Compile Include="Migrations\201803071505413_init.Designer.cs">
       <DependentUpon>201803071505413_init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803081245123_creationTime.cs" />
+    <Compile Include="Migrations\201803081245123_creationTime.Designer.cs">
+      <DependentUpon>201803081245123_creationTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803081251225_creationTime2.cs" />
+    <Compile Include="Migrations\201803081251225_creationTime2.Designer.cs">
+      <DependentUpon>201803081251225_creationTime2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803081254435_creationTime3.cs" />
+    <Compile Include="Migrations\201803081254435_creationTime3.Designer.cs">
+      <DependentUpon>201803081254435_creationTime3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803081305233_EndDate1.cs" />
+    <Compile Include="Migrations\201803081305233_EndDate1.Designer.cs">
+      <DependentUpon>201803081305233_EndDate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803081309439_creationTime4.cs" />
+    <Compile Include="Migrations\201803081309439_creationTime4.Designer.cs">
+      <DependentUpon>201803081309439_creationTime4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803081319486_creationTime5.cs" />
+    <Compile Include="Migrations\201803081319486_creationTime5.Designer.cs">
+      <DependentUpon>201803081319486_creationTime5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803081323392_creationTime6.cs" />
+    <Compile Include="Migrations\201803081323392_creationTime6.Designer.cs">
+      <DependentUpon>201803081323392_creationTime6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803081332596_creationTime7.cs" />
+    <Compile Include="Migrations\201803081332596_creationTime7.Designer.cs">
+      <DependentUpon>201803081332596_creationTime7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803081342078_creationTime8.cs" />
+    <Compile Include="Migrations\201803081342078_creationTime8.Designer.cs">
+      <DependentUpon>201803081342078_creationTime8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803081343132_creationTime9.cs" />
+    <Compile Include="Migrations\201803081343132_creationTime9.Designer.cs">
+      <DependentUpon>201803081343132_creationTime9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803081348091_creationTime10.cs" />
+    <Compile Include="Migrations\201803081348091_creationTime10.Designer.cs">
+      <DependentUpon>201803081348091_creationTime10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803081352045_CMA.cs" />
+    <Compile Include="Migrations\201803081352045_CMA.Designer.cs">
+      <DependentUpon>201803081352045_CMA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Activity.cs" />
@@ -311,6 +359,42 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201803071505413_init.resx">
       <DependentUpon>201803071505413_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803081245123_creationTime.resx">
+      <DependentUpon>201803081245123_creationTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803081251225_creationTime2.resx">
+      <DependentUpon>201803081251225_creationTime2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803081254435_creationTime3.resx">
+      <DependentUpon>201803081254435_creationTime3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803081305233_EndDate1.resx">
+      <DependentUpon>201803081305233_EndDate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803081309439_creationTime4.resx">
+      <DependentUpon>201803081309439_creationTime4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803081319486_creationTime5.resx">
+      <DependentUpon>201803081319486_creationTime5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803081323392_creationTime6.resx">
+      <DependentUpon>201803081323392_creationTime6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803081332596_creationTime7.resx">
+      <DependentUpon>201803081332596_creationTime7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803081342078_creationTime8.resx">
+      <DependentUpon>201803081342078_creationTime8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803081343132_creationTime9.resx">
+      <DependentUpon>201803081343132_creationTime9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803081348091_creationTime10.resx">
+      <DependentUpon>201803081348091_creationTime10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803081352045_CMA.resx">
+      <DependentUpon>201803081352045_CMA.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
