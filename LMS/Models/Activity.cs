@@ -11,7 +11,7 @@ namespace LMS.Models
     {
         public int Id { get; set; }
         [StringLength(50, ErrorMessage = "The {0} must be between {1} and {2} characters long", MinimumLength = 1)]
-        [Display(Name = "Module name")]
+        [Display(Name = "Activity name")]
         [Required]
         public string ActivityName
         {
